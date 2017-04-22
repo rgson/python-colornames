@@ -9,6 +9,7 @@ The octree is shrunk by flattening branches with less than two ancestors.
 """
 
 import json
+import pprint
 
 
 def octree(depth):
@@ -32,6 +33,14 @@ def shrink(node):
                 res = val if res is None else MULTI
     return res
 
+def tree2dict(tree):
+    d = {}
+    for i, child in enumerate(tree):
+        if type(child) is list:
+            d[i] = tree2dict(child)
+        elif child is not None:
+            d[i] = child
+    return d
 
 colors = json.load(open('colors.json', 'r'))
 tree = octree(8)
@@ -39,4 +48,5 @@ for name, rgb in colors.items():
     i,j,k,l,m,n,o,p = [octree_index(*rgb, d) for d in reversed(range(8))]
     tree[i][j][k][l][m][n][o][p] = name
 shrink(tree)
-print(tree)
+tree = tree2dict(tree)
+pprint.pprint(tree)
