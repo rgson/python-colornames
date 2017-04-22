@@ -32,7 +32,7 @@ def _find_hex(color):
     if color[0] == '#':
         color = color[1:]
     if len(color) == 3:
-        return find(*[int(c, 16) for c in color])
+        return find(*[int(c*2, 16) for c in color])
     if len(color) == 6:
         return find(*[int(color[i:i+2], 16) for i in (0, 2, 4)])
     raise ValueError("Malformed hexadecimal color representation")
