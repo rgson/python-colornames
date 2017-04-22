@@ -63,7 +63,7 @@ def _descendants(tree):
         if type(child) is str:
             yield child
         else:
-            yield from _descendents(child)
+            yield from _descendants(child)
 
 
 _colors = {
