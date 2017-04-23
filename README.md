@@ -23,6 +23,13 @@ A single function, `find`, is exposed by the library. It finds the name of a giv
 'Dark Burgundy'
 ```
 
+
+## License
+
+The code is licensed under the MIT license.
+Certain parts are licensed under CC BY 2.5 (see [acknowledgements](#acknowledgements)).
+
+
 ## Acknowledgements
 
 The list of color names is based on Chirag Mehta's [ntc js](http://chir.ag/projects/ntc), licensed under [CC BY 2.5](https://creativecommons.org/licenses/by/2.5/).
