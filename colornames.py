@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 """
 Gives the name of any RGB color.
 
@@ -2612,24 +2610,3 @@ _searchtree = {
                         5: 'White Pointer',
                         6: 'Ceramic',
                         7: {6: 'Romance', 7: 'White'}}}}}}}
-
-
-if __name__ == "__main__":
-    exact = [
-        ("Amaranth", (229,  43,  80)),
-        ("Bamboo"  , (218,  99,   4)),
-        ("Camelot" , (137,  52,  86)),
-        ("Denim"   , ( 21,  96, 189)),
-        ("Elephant", ( 18,  52,  71))]
-    approximate = [
-        ("Black"   , ( 1,   3,   2)),
-        ("White"   , (254, 255, 255))]
-    print("Exact matches:")
-    for name, color in exact:
-        result = find(color)
-        print("  {:16} Expected: {:9} Actual: {}".format(str(color), name, result))
-    print("Approximate matches:")
-    for name, color in approximate:
-        result = find(color)
-        print("  {:16} Expected: {:9} Actual: {}".format(str(color), name, result))
-
