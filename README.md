@@ -5,6 +5,15 @@ A Python library for finding the names of colors.
 The `colornames` library gives you the name of any RGB color. If the exact color you're looking for doesn't have a name, it'll find the closest match instead.
 
 
+## Installation
+
+PyPI: [pycolornames](https://pypi.org/project/pycolornames/)
+
+```sh
+pip install pycolornames
+```
+
+
 ## Usage
 
 A single function, `find`, is exposed by the library. It finds the name of a given color.
