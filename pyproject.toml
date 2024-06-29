@@ -1,5 +1,5 @@
 [project]
-name = "colornames"
+name = "pycolornames"
 description = "Finds the name of any color."
 authors = [
     {name="Robin Gustafsson", email="robin@rgson.se"},
