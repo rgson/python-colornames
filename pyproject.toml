@@ -1,0 +1,30 @@
+[project]
+name = "colornames"
+description = "Finds the name of any color."
+authors = [
+    {name="Robin Gustafsson", email="robin@rgson.se"},
+]
+readme = "README.md"
+license = {file="LICENSE"}
+dynamic = ["version"]
+requires-python = ">=3.4"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/rgson/python-colornames"
+Issues = "https://github.com/rgson/python-colornames/issues"
+Repository = "https://github.com/rgson/python-colornames.git"
+
+[build-system]
+requires = [
+    "setuptools >= 64",
+    "setuptools_scm >= 8",
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+local_scheme = "no-local-version"
